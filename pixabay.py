@@ -117,6 +117,6 @@ def main():
         edit_image(current_name)
         img = Image.open(current_name)
         write_quote(img,current_quote,current_name)
-        print("Done")
+        print("done 2")
 
 main()
