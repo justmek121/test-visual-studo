@@ -109,7 +109,7 @@ def main():
     #load pic
     pics = load_pic()
     pics_list_no = random.sample(range(0, 64790), 200)
-    for x in range(200):
+    for x in range(100):
         current_pic = pics[pics_list_no[x]][0]
         current_quote = quotes[quotes_list_no[x]][0]
         current_name = "pic/template_"+repr(x)+".jpg"
