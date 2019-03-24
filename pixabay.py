@@ -113,6 +113,7 @@ def main():
         current_pic = pics[pics_list_no[x]][0]
         current_quote = quotes[quotes_list_no[x]][0]
         current_name = "pic/template_"+repr(x)+".jpg"
+        print(current_pic)
         download_picture(current_pic,current_name)
         edit_image(current_name)
         img = Image.open(current_name)
