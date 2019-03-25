@@ -105,10 +105,10 @@ def load_pic():
 def main():
     #load quotes
     quotes = load_quotes()
-    quotes_list_no = random.sample(range(0, 267), 200)
+    quotes_list_no = random.sample(range(0, 267), 100)
     #load pic
     pics = load_pic()
-    pics_list_no = random.sample(range(0, 64790), 200)
+    pics_list_no = random.sample(range(0, 64790), 100)
     for x in range(100):
         current_pic = pics[pics_list_no[x]][0]
         current_quote = quotes[quotes_list_no[x]][0]
