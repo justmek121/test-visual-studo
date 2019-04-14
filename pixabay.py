@@ -105,13 +105,14 @@ def load_pic():
 def main():
     #load quotes
     quotes = load_quotes()
-    quotes_list_no = random.sample(range(0, 267), 100)
+    quotes_list_no = rsandom.sample(range(0, 267), 100)
     #load pic
     pics = load_pic()
     pics_list_no = random.sample(range(0, 64790), 100)
     for x in range(100):
+      try:
         current_pic = pics[pics_list_no[x]][0]
-        current_quote = quotes[quotes_list_no[x]][0]
+        current_quote = quotes[random.randint(0,133)][0]
         current_name = "pic/template_"+repr(x)+".jpg"
         print(current_pic)
         download_picture(current_pic,current_name)
@@ -119,5 +120,7 @@ def main():
         img = Image.open(current_name)
         write_quote(img,current_quote,current_name)
         print("done 2")
+      except:
+        print('error')
 
 main()
